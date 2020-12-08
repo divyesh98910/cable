@@ -29,6 +29,13 @@
 
     </LinearLayout>
 
+    <ImageView
+        android:layout_width="150dp"
+        android:layout_height="150dp"
+        android:src="@drawable/splashlogo"
+        android:layout_above="@+id/cardone"
+        android:layout_centerHorizontal="true"/>
+
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
@@ -40,6 +47,7 @@
         android:layout_centerHorizontal="true"
         android:textColor="#111"
         android:textSize="30sp"
+        android:visibility="gone"
         />
 
 
@@ -75,58 +83,45 @@
 
             <!-- Email Label -->
 
-                <EditText
+            <EditText
 
-                    android:id="@+id/etuser"
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:drawableStart="@drawable/ic_user"
-                    android:drawableLeft="@drawable/ic_user"
-                    android:drawablePadding="10dp"
-                    android:background="#EFEFEF"
-                    android:fontFamily="@font/cabin_medium"
-                    android:hint="USER ID"
-                    android:textColor="#111111"
-                    android:textColorHint="#111111"
-                    android:padding="10dp"
-                    android:layout_marginTop="15dp"
-                    android:layout_marginLeft="8dp"
-                    android:layout_marginRight="8dp"/>
-
-                <EditText
-
-                    android:id="@+id/etpassword"
-                    android:layout_width="match_parent"
-                    android:layout_height="match_parent"
-                    android:drawableStart="@drawable/ic_password"
-                    android:drawableLeft="@drawable/ic_password"
-                    android:drawablePadding="10dp"
-                    android:fontFamily="@font/cabin_medium"
-                    android:hint="PASSWORD"
-                    android:padding="10dp"
-                    android:background="#EFEFEF"
-                    android:textColor="#111111"
-                    android:textColorHint="#111111"
-                    android:layout_marginTop="20dp"
-                    android:layout_marginLeft="8dp"
-                    android:layout_marginRight="8dp"/>
-
-
-
-            <CheckBox
-                android:id="@+id/saveLoginCheckBox"
-                android:layout_width="wrap_content"
+                android:id="@+id/etuser"
+                android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:layout_marginLeft="10dp"
-                android:layout_marginTop="10dp"
-                android:button="@drawable/checkbox_layout"
-                android:checked="true"
-                android:fontFamily="@font/cabin_bold"
-                android:gravity="center"
-                android:padding="10dp"
-                android:text="Remember Login ?"
+                android:drawableStart="@drawable/ic_user"
+                android:drawableLeft="@drawable/ic_user"
+                android:drawablePadding="10dp"
+                android:background="#EFEFEF"
+                android:fontFamily="@font/cabin_medium"
+                android:hint="User Id"
                 android:textColor="#111111"
-                android:textSize="14sp" />
+                android:textColorHint="#111111"
+                android:padding="10dp"
+                android:layout_marginTop="15dp"
+                android:layout_marginLeft="8dp"
+                android:layout_marginRight="8dp"/>
+
+            <EditText
+
+                android:id="@+id/etpassword"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:drawableStart="@drawable/ic_password"
+                android:drawableLeft="@drawable/ic_password"
+                android:drawablePadding="10dp"
+                android:fontFamily="@font/cabin_medium"
+                android:hint="Password"
+                android:padding="10dp"
+                android:background="#EFEFEF"
+                android:textColor="#111111"
+                android:textColorHint="#111111"
+                android:layout_marginTop="20dp"
+                android:layout_marginLeft="8dp"
+                android:layout_marginRight="8dp"/>
+
+
+
+
 
             <Button
                 android:id="@+id/btnlogin"
