@@ -1,0 +1,150 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".LoginActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:weightSum="4">
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="2"
+            android:background="#4CAF50" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="2"
+            android:background="#FBF6F6"
+            android:alpha="0.75"/>
+
+
+
+    </LinearLayout>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="5dp"
+        android:fontFamily="@font/cabin_bold"
+        android:padding="5dp"
+        android:text="Login"
+        android:layout_above="@+id/cardone"
+        android:layout_centerHorizontal="true"
+        android:textColor="#111"
+        android:textSize="30sp"
+        />
+
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/cardone"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:layout_margin="12dp"
+        app:cardBackgroundColor="@color/white"
+        app:cardCornerRadius="15dp"
+        app:cardElevation="5dp">
+
+        <LinearLayout
+
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="15dp">
+
+
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="5dp"
+                android:fontFamily="@font/cabin_bold"
+                android:padding="5dp"
+                android:text="Please Sing In To Continue"
+                android:textColor="#111"
+                android:textSize="18sp" />
+
+
+            <!-- Email Label -->
+
+                <EditText
+
+                    android:id="@+id/etuser"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:drawableStart="@drawable/ic_user"
+                    android:drawableLeft="@drawable/ic_user"
+                    android:drawablePadding="10dp"
+                    android:background="#EFEFEF"
+                    android:fontFamily="@font/cabin_medium"
+                    android:hint="USER ID"
+                    android:textColor="#111111"
+                    android:textColorHint="#111111"
+                    android:padding="10dp"
+                    android:layout_marginTop="15dp"
+                    android:layout_marginLeft="8dp"
+                    android:layout_marginRight="8dp"/>
+
+                <EditText
+
+                    android:id="@+id/etpassword"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:drawableStart="@drawable/ic_password"
+                    android:drawableLeft="@drawable/ic_password"
+                    android:drawablePadding="10dp"
+                    android:fontFamily="@font/cabin_medium"
+                    android:hint="PASSWORD"
+                    android:padding="10dp"
+                    android:background="#EFEFEF"
+                    android:textColor="#111111"
+                    android:textColorHint="#111111"
+                    android:layout_marginTop="20dp"
+                    android:layout_marginLeft="8dp"
+                    android:layout_marginRight="8dp"/>
+
+
+
+            <CheckBox
+                android:id="@+id/saveLoginCheckBox"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="10dp"
+                android:button="@drawable/checkbox_layout"
+                android:checked="true"
+                android:fontFamily="@font/cabin_bold"
+                android:gravity="center"
+                android:padding="10dp"
+                android:text="Remember Login ?"
+                android:textColor="#111111"
+                android:textSize="14sp" />
+
+            <Button
+                android:id="@+id/btnlogin"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginTop="15dp"
+                android:background="@drawable/buttonlogin"
+                android:fontFamily="@font/cabin_bold"
+                android:gravity="center"
+                android:padding="12dp"
+                android:text="Login"
+                android:textSize="18sp" />
+
+
+        </LinearLayout>
+
+    </androidx.cardview.widget.CardView>
+
+
+</RelativeLayout>
