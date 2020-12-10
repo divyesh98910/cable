@@ -93,7 +93,7 @@
                 android:drawablePadding="10dp"
                 android:background="#EFEFEF"
                 android:fontFamily="@font/cabin_medium"
-                android:hint="User Id"
+                android:hint="Mobile No"
                 android:textColor="#111111"
                 android:textColorHint="#111111"
                 android:padding="10dp"
