@@ -26,10 +26,10 @@ public class MainActivity extends AppCompatActivity {
         AreaAdapter adapter=new AreaAdapter(this);
         areaspinner.setAdapter(adapter);
 
-        CustomerAdapter adapterrecycle=new CustomerAdapter();
+//        CustomerAdapter adapterrecycle=new CustomerAdapter();
         recycleview.setHasFixedSize(true);
         recycleview.setLayoutManager(new LinearLayoutManager(this));
-        recycleview.setAdapter(adapterrecycle);
+//        recycleview.setAdapter(adapterrecycle);
 
         areaspinner.setOnItemSelectedListener(new AdapterView.OnItemSelectedListener() {
             @Override

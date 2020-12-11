@@ -4,8 +4,8 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".CustomberDetailsActivity"
-    android:background="@color/white">
+    android:background="@color/white"
+    tools:context=".CustomberDetailsActivity">
 
 
     <androidx.cardview.widget.CardView
@@ -16,25 +16,229 @@
         android:layout_marginRight="8dp"
         android:layout_marginBottom="8dp"
         android:padding="8dp"
-        app:cardCornerRadius="10dp"
-        app:cardBackgroundColor="#F3F1F1"
-        >
+        app:cardBackgroundColor="#F3EEEE"
+        app:cardCornerRadius="10dp">
 
-    <ImageView
-        android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:background="@drawable/carditem"/>
-        
         <LinearLayout
-            android:layout_width=""
-            android:layout_height=""
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
 
 
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:animateLayoutChanges="true"
+                android:orientation="vertical"
+                android:padding="5dp">
 
-    
-</androidx.cardview.widget.CardView>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/cabin_bold"
+                    android:text="Order Summary"
+                    android:textColor="#111"
+                    android:layout_marginLeft="8dp"
+                    android:textSize="18sp" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="7dp"
+                    android:animateLayoutChanges="true"
+                    android:orientation="vertical"
+                    android:padding="4dp">
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_vertical"
+                        android:animateLayoutChanges="true"
+                        android:gravity="center_vertical"
+                        android:orientation="horizontal"
+                        android:padding="4dp">
+
+                        <TextView
+                            android:id="@+id/fristitem"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentStart="true"
+                            android:layout_alignParentLeft="true"
+                            android:gravity="center_vertical"
+                            android:padding="2dp"
+                            android:text="Subscriber Name"
+                            android:fontFamily="@font/cabin_bold"
+                            android:textColor="#717070"
+                            android:textSize="13sp" />
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_below="@+id/fristitem"
+                            android:background="@drawable/textitem"
+                            android:fontFamily="@font/cabin_semibold"
+                            android:gravity="center_vertical"
+                            android:padding="5dp"
+                            android:textColor="#111111"
+                            android:textSize="15sp"
+                            tools:text="a b c d e f fg h h h hh h " />
+                    </RelativeLayout>
+
+                    <RelativeLayout
+                        android:id="@+id/taxAmountCard"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:gravity="center_vertical"
+                        android:orientation="horizontal"
+                        android:padding="4dp">
+
+                        <TextView
+                            android:id="@+id/seconditem"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:gravity="center_vertical"
+                            android:text="Subscriber Address"
+                            android:fontFamily="@font/cabin_bold"
+                            android:textColor="#717070"
+                            android:textSize="13sp" />
 
 
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_below="@id/seconditem"
+                            android:gravity="center_vertical"
+                            android:background="@drawable/textitem"
+                            android:padding="5dp"
+                            android:fontFamily="@font/cabin_semibold"
+                            android:textColor="#111111"
+                            android:textSize="15sp"
+                            tools:text="Rajkot" />
+                    </RelativeLayout>
 
 
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:gravity="center_vertical"
+                        android:orientation="horizontal"
+                        android:padding="4dp"
+                        >
+
+                        <TextView
+                            android:id="@+id/thirditem"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:gravity="center_vertical"
+                            android:text="Subscriber Mobile No"
+                            android:fontFamily="@font/cabin_bold"
+                            android:textColor="#717070"
+                            android:textSize="13sp" />
+
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_below="@id/thirditem"
+                            android:gravity="center_vertical"
+                            android:background="@drawable/textitem"
+                            android:padding="5dp"
+                            android:fontFamily="@font/cabin_semibold"
+                            android:textColor="#111111"
+                            android:textSize="15sp"
+                            tools:text="98998989898" />
+                    </RelativeLayout>
+
+                    <RelativeLayout
+
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:gravity="center_vertical"
+                        android:padding="4dp">
+
+                        <TextView
+                            android:id="@+id/fouritem"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:gravity="center_vertical"
+                            android:text="Subscriber Package"
+                            android:fontFamily="@font/cabin_bold"
+                            android:textColor="#717070"
+                            android:textSize="13sp" />
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_below="@+id/fouritem"
+                            android:gravity="center_vertical"
+                            android:padding="5dp"
+                            android:background="@drawable/textitem"
+                            android:fontFamily="@font/cabin_semibold"
+                            android:textColor="#111111"
+                            android:textSize="15sp"
+                            tools:text="Simple Pacakge" />
+                    </RelativeLayout>
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:gravity="center_vertical"
+                        android:padding="4dp">
+
+                        <TextView
+                            android:id="@+id/fiveitem"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:gravity="center_vertical"
+                            android:text="SetTop Box No"
+                            android:fontFamily="@font/cabin_bold"
+                            android:textColor="#717070"
+                            android:textSize="13sp" />
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_below="@+id/fiveitem"
+                            android:background="@drawable/textitem"
+                            android:gravity="center_vertical"
+                            android:padding="5dp"
+                            android:fontFamily="@font/cabin_semibold"
+                            android:textColor="#111111"
+                            android:textSize="15sp"
+                            tools:text="12345678" />
+                    </RelativeLayout>
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:gravity="center_vertical"
+                        android:padding="4dp">
+
+                        <TextView
+                            android:id="@+id/sixitem"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:gravity="center_vertical"
+                            android:text="Status"
+                            android:fontFamily="@font/cabin_bold"
+                            android:textColor="#717070"
+                            android:textSize="13sp" />
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_below="@+id/sixitem"
+                            android:background="@drawable/textitem"
+                            android:gravity="center_vertical"
+                            android:padding="5dp"
+                            android:fontFamily="@font/cabin_semibold"
+                            android:textColor="#111111"
+                            android:textSize="15sp"
+                            tools:text="Deactivate" />
+                    </RelativeLayout>
+
+                </LinearLayout>
+            </LinearLayout>
+        </LinearLayout>
+    </androidx.cardview.widget.CardView>
 </RelativeLayout>

@@ -10,15 +10,15 @@ import androidx.recyclerview.widget.RecyclerView;
 
 public class CustomerAdapter extends RecyclerView.Adapter<CustomerAdapter.Viewholde> {
 
-  private com.example.myapplication.CustomerAdapter[] list;
+  private CustomerAdapter[] list;
 
-    public CustomerAdapter(com.example.myapplication.CustomerAdapter[] list) {
+    public CustomerAdapter(CustomerAdapter[] list) {
         this.list = list;
     }
 
     @NonNull
     @Override
-    public com.example.myapplication.CustomerAdapter.Viewholde onCreateViewHolder(@NonNull ViewGroup parent, int viewType) {
+    public CustomerAdapter.Viewholde onCreateViewHolder(@NonNull ViewGroup parent, int viewType) {
         LayoutInflater layoutInflater=LayoutInflater.from(parent.getContext());
         View list=layoutInflater.inflate(R.layout.customeritem,parent,false);
         Viewholde viewhold =new Viewholde(list);
@@ -26,9 +26,9 @@ public class CustomerAdapter extends RecyclerView.Adapter<CustomerAdapter.Viewho
     }
 
     @Override
-    public void onBindViewHolder(@NonNull com.example.myapplication.CustomerAdapter.Viewholde holder, int position) {
-        holder.tvsubscribername.setText(list[position]);
-        holder.tvmobileno.setText(list[position]);
+    public void onBindViewHolder(@NonNull Viewholde holder, int position) {
+//        holder.tvsubscribername.setText(list[position]);
+//        holder.tvmobileno.setText(list[position]);
 
     }
 

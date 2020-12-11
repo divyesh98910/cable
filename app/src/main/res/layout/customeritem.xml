@@ -14,9 +14,8 @@
         android:layout_marginRight="8dp"
         android:layout_marginBottom="8dp"
         android:padding="8dp"
-        app:cardCornerRadius="10dp"
-        app:cardBackgroundColor="#F3F1F1"
-        >
+        app:cardCornerRadius="6dp"
+        app:cardBackgroundColor="#F3F1F1">
 
         <ImageView
             android:layout_width="match_parent"
