@@ -8,9 +8,12 @@ import android.widget.Spinner;
 import android.widget.Toast;
 
 import androidx.appcompat.app.AppCompatActivity;
+import androidx.recyclerview.widget.LinearLayoutManager;
+import androidx.recyclerview.widget.RecyclerView;
 
 public class MainActivity extends AppCompatActivity {
     Spinner areaspinner;
+    RecyclerView recycleview;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -18,10 +21,15 @@ public class MainActivity extends AppCompatActivity {
         getWindow().setFlags(WindowManager.LayoutParams.FLAG_FULLSCREEN, WindowManager.LayoutParams.FLAG_FULLSCREEN);
 
         areaspinner=findViewById(R.id.areaspinner);
+        recycleview=findViewById(R.id.recycleview);
         areaspinner.setBackgroundResource(R.drawable.spinnerlayout);
-
         AreaAdapter adapter=new AreaAdapter(this);
         areaspinner.setAdapter(adapter);
+
+        CustomerAdapter adapterrecycle=new CustomerAdapter();
+        recycleview.setHasFixedSize(true);
+        recycleview.setLayoutManager(new LinearLayoutManager(this));
+        recycleview.setAdapter(adapterrecycle);
 
         areaspinner.setOnItemSelectedListener(new AdapterView.OnItemSelectedListener() {
             @Override
