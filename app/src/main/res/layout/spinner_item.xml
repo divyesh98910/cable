@@ -7,10 +7,11 @@
     <TextView
         android:id="@+id/text"
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
+        android:layout_height="50dp"
         android:singleLine="true"
+        tools:text="asasaas"
+        android:gravity="center_vertical"
         android:padding="8dp"
-        tools:text="raj"
         android:layout_marginHorizontal="1dp"
         android:textColor="@color/black"
         android:textSize="15sp"
