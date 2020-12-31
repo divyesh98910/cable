@@ -4,7 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".LoginActivity">
+    tools:context=".Activity.LoginActivity">
 
     <LinearLayout
         android:layout_width="match_parent"
@@ -85,7 +85,7 @@
 
             <EditText
 
-                android:id="@+id/etuser"
+                android:id="@+id/etMobile"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:drawableStart="@drawable/ic_user"
@@ -93,9 +93,9 @@
                 android:drawablePadding="10dp"
                 android:background="#EFEFEF"
                 android:fontFamily="@font/cabin_medium"
-                android:hint="Mobile No"
+                android:hint="Mobile no"
                 android:textColor="#111111"
-                android:textColorHint="#111111"
+                android:textColorHint="#838383"
                 android:padding="10dp"
                 android:layout_marginTop="15dp"
                 android:layout_marginLeft="8dp"
@@ -103,7 +103,7 @@
 
             <EditText
 
-                android:id="@+id/etpassword"
+                android:id="@+id/etPassword"
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
                 android:drawableStart="@drawable/ic_password"
@@ -114,7 +114,7 @@
                 android:padding="10dp"
                 android:background="#EFEFEF"
                 android:textColor="#111111"
-                android:textColorHint="#111111"
+                android:textColorHint="#838383"
                 android:layout_marginTop="20dp"
                 android:layout_marginLeft="8dp"
                 android:layout_marginRight="8dp"/>

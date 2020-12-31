@@ -1,38 +1,46 @@
 <?xml version="1.0" encoding="utf-8"?>
-<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".MainActivity"
+    tools:context=".Activity.MainActivity"
     android:background="#ffffff"
-    >
+    android:orientation="vertical">
 
     <androidx.appcompat.widget.Toolbar
         android:id="@+id/toolbar"
         android:layout_width="match_parent"
         android:layout_height="?actionBarSize"
-        app:title="cable"
-        app:titleTextColor="@color/black"
-        android:background="#4CAF50"/>
+        app:title="Cable"
+        app:titleTextColor="@color/white"
+        android:background="#5AC676"/>
 
-    <Spinner
-        android:id="@+id/areaspinner"
+<!--    <Spinner-->
+<!--        android:id="@+id/areaspinner"-->
+<!--        android:layout_width="match_parent"-->
+<!--        android:layout_height="50dp"-->
+<!--        android:layout_below="@+id/toolbar"-->
+<!--        android:layout_margin="4dp"-->
+<!--        style="@style/spinner_style"-->
+<!--        />-->
+
+    <com.google.android.material.tabs.TabLayout
+        android:id="@+id/tabLayout"
         android:layout_width="match_parent"
-        android:layout_height="50dp"
-        android:layout_below="@+id/toolbar"
-        android:layout_margin="4dp"
-        style="@style/spinner_style"
-        />
+        android:layout_height="?actionBarSize"
+        android:background="#5AC676"
+        app:tabIndicatorColor="#FFF"
+        app:tabSelectedTextColor="#FFF"
+        app:tabTextColor="#000" />
 
-    <androidx.recyclerview.widget.RecyclerView
+    <androidx.viewpager.widget.ViewPager
+        android:id="@+id/viewPager"
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:scrollbars="vertical"
-        android:id="@+id/recycleview"
-        android:layout_margin="4dp"
-        android:layout_below="@id/areaspinner"/>
+        android:layout_height="match_parent" />
 
 
 
-</RelativeLayout>
+
+
+</LinearLayout>
