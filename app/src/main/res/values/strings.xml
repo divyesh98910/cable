@@ -1,3 +1,4 @@
 <resources>
     <string name="app_name">Cable</string>
+    <string name="add">logout</string>
 </resources>

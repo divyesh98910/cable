@@ -8,15 +8,7 @@
     android:background="#ffffff"
     android:orientation="vertical">
 
-    <androidx.appcompat.widget.Toolbar
-        android:id="@+id/toolbar"
-        android:layout_width="match_parent"
-        android:layout_height="?actionBarSize"
-        app:title="Cable"
-        app:titleTextColor="@color/white"
-        android:background="#5AC676"/>
-
-<!--    <Spinner-->
+    <!--    <Spinner-->
 <!--        android:id="@+id/areaspinner"-->
 <!--        android:layout_width="match_parent"-->
 <!--        android:layout_height="50dp"-->
@@ -24,6 +16,14 @@
 <!--        android:layout_margin="4dp"-->
 <!--        style="@style/spinner_style"-->
 <!--        />-->
+
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="?actionBarSize"
+        android:background="#5AC676"
+        app:title="Cable"
+        app:titleTextColor="@color/white" />
 
     <com.google.android.material.tabs.TabLayout
         android:id="@+id/tabLayout"
@@ -38,6 +38,8 @@
         android:id="@+id/viewPager"
         android:layout_width="match_parent"
         android:layout_height="match_parent" />
+
+
 
 
 

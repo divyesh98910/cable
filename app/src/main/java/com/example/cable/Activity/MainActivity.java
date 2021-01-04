@@ -1,7 +1,11 @@
 package com.example.cable.Activity;
 
 import android.os.Bundle;
+import android.view.Menu;
+import android.view.MenuItem;
+import android.widget.Toast;
 
+import androidx.annotation.NonNull;
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.appcompat.widget.Toolbar;
 import androidx.fragment.app.Fragment;
@@ -29,11 +33,33 @@ public class MainActivity extends AppCompatActivity {
         tabLayout.setupWithViewPager(pager);
         setSupportActionBar(toolbar);
 
+
+
         Fragment[] fragments = new Fragment[2];
         fragments[0] = new CurrentSubscriberFragment();
         fragments[1] = new PendingSubscriberFragment();
         pagerAdapter = new PagerAdapter(getSupportFragmentManager(), fragments, new String[]{"Current", "Pending"}, FragmentPagerAdapter.BEHAVIOR_RESUME_ONLY_CURRENT_FRAGMENT);
         pager.setAdapter(pagerAdapter);
+
+
     }
+
+    @Override
+    public boolean onCreateOptionsMenu(Menu menu) {
+        getMenuInflater().inflate(R.menu.logout, menu);
+        return true;
+    }
+
+    @Override
+    public boolean onOptionsItemSelected(@NonNull MenuItem item) {
+        switch (item.getItemId()) {
+            case R.id.logout:
+                Toast.makeText(this, "logout", Toast.LENGTH_SHORT).show();
+                break;
+        }
+            return super.onOptionsItemSelected(item);
+
+    }
+
 
 }
